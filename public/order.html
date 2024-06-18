@@ -394,6 +394,7 @@
 				}
 				$('.loaderbg').hide();
 			}).error(function (error) {
+				window.location.reload();
 				$('.loaderbg').hide();
 				showError($('#next'), $.parseJSON(error.responseText).msg);
 			});
